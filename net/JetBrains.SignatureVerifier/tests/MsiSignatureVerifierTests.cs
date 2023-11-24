@@ -12,6 +12,7 @@ namespace JetBrains.SignatureVerifier.Tests
     // @formatter:off
     [TestCase(VerifySignatureStatus.Valid           , "2dac4b.msi")]
     [TestCase(VerifySignatureStatus.InvalidSignature, "2dac4b_broken_hash.msi")]
+    [TestCase(VerifySignatureStatus.InvalidSignature, "2dac4b_broken_productname.msi")]
     [TestCase(VerifySignatureStatus.InvalidSignature, "2dac4b_broken_sign.msi")]
     [TestCase(VerifySignatureStatus.InvalidSignature, "2dac4b_broken_timestamp.msi")]
     // @formatter:on
